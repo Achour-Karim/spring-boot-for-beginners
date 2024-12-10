@@ -52,3 +52,5 @@ jobs:
           dockerfile: Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}spring-boot-for-beginners:latest
+      - name: Save State Example
+        run: echo "state_value=my_value" >> $GITHUB_STATE
